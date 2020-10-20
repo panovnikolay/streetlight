@@ -27,7 +27,7 @@ private:
     QPainter * lampPainter;
     const QColor offColor = QColor(150, 150, 150);
     const QColor onColor = QColor(255, 255, 0);
-    const QRect rectangle = QRect(204, 176, 50, 65);
+    const QRect rectangle = QRect(165, 147, 50, 65);
     const int startAngle = 0;
     const int spanAngle = -180 * 16;
     Shine shine;

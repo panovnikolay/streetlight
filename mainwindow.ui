@@ -92,6 +92,12 @@
       <height>25</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: white;
+	borderpstyle: outset;
+}</string>
+    </property>
     <property name="text">
      <string>Connect</string>
     </property>

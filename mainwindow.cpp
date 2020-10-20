@@ -20,8 +20,10 @@ MainWindow::MainWindow(QWidget * parent)
     setWindowTitle("Street light");
     QPixmap image{":/res/img/park.svg"};
     ui->image->setPixmap(image.scaled(ui->image->width(), ui->image->height(), Qt::KeepAspectRatio));
-    layout()->addWidget(&lamp->getShine());
-    layout()->addWidget(lamp);
+
+    QGridLayout * layout = new QGridLayout(ui->image);
+    layout->addWidget(&lamp->getShine(), 0, 0);
+    layout->addWidget(lamp, 0, 0);
 }
 
 MainWindow::~MainWindow()
